@@ -41,6 +41,7 @@ abstract class BaseResponseProcessor extends AbstractResponseProcessor
     {
         $response->setOrderId((string)$xml->OrderId);
         $response->setTransactionId((string)$xml->TransId);
+        $response->setAuthCode((string) $xml->AuthCode);
     }
 
     /**
